@@ -1,0 +1,157 @@
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code
+$ pwd
+/d/Ethan DevOps Course/April Code
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code
+$ git init
+Initialized empty Git repository in D:/Ethan DevOps Course/April Code/.git/
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ vi index.html
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ ls
+index.html
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git add index.html
+
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git commit -m "index.html has been created"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'owner@lenovo.(none)')
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git config --global user.email "godsenarendra@gmail.com"
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git config --global user.name "Narendra"
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git commit -m "index.html has been created"
+[master (root-commit) 7070a33] index.html has been created
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git log
+commit 7070a33a1bb6072852fbfc37d6b8866454d01333 (HEAD -> master)
+Author: Narendra <godsenarendra@gmail.com>
+Date:   Sat May 8 13:45:13 2021 +0530
+
+    index.html has been created
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$ git log --oneline
+7070a33 (HEAD -> master) index.html has been created
+
+owner@lenovo MINGW64 /d/Ethan DevOps Course/April Code (master)
+$
